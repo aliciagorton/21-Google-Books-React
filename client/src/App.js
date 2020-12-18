@@ -1,5 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import './App.css';
+import { HashRouter as Router, Route, Switch} from "react-router-dom";
 import Navbar from './components/Navbar';
 import Saved from './components/Saved';
 import Search from './components/Search';

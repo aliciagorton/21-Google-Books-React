@@ -1,4 +1,4 @@
-# 21-Google-Books-React
+# 21-Google-Books-React [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Overview
 
@@ -45,23 +45,37 @@ In this activity, you'll create a new React-based Google Books Search app. This 
     }
     ```
 
-5. Create a layout similar to the mockups displayed above. This should be a SPA (Single Page Application) that uses [`react-router-dom`](https://github.com/reactjs/react-router) to navigate, hide and show your React components without changing the route within Express.
+- 5. Create a layout similar to the mockups displayed above. This should be a SPA (Single Page Application) that uses [`react-router-dom`](https://github.com/reactjs/react-router) to navigate, hide and show your React components without changing the route within Express.
 
-* The layout should include at least two React Components for each page `Search` and `Saved`.
+- * The layout should include at least two React Components for each page `Search` and `Saved`.
 
 * Feel free to try out alternative CSS framework to Bootstrap.
 
-6. Add the following Express routes for your app:
+Technologies used:
+* HTML
+* CSS (Material UI)
+* Javascript
+* Node.js
+* Express
+* MongoDB
+* Mongooose
+* Axios
+* API
+* React 
+* React-Router-DOM
+* Cors
+* Heroku
 
-* `/api/books` (get) - Should return all saved books as JSON.
+- - -
+### Screenshots:
 
-* `/api/books` (post) - Will be used to save a new book to the database.
 
-* `/api/books/:id` (delete) - Will be used to delete a book from the database by Mongo `_id`.
+- - -
+### Submission: 
 
-* `*` (get) - Will load your single HTML page in `client/build/index.html`. Make sure you have this _after_ all other routes are defined.
+* Deployed Heroku link:
+* Github Repository link: https://github.com/aliciagorton/21-Google-Books-React.git
 
-* Deploy your application to Heroku once complete. **You must use Create React App** and current versions of React and React-Router-Dom for this assignment.
 
 - - -
 
@@ -73,15 +87,24 @@ In this activity, you'll create a new React-based Google Books Search app. This 
 
   * [Socket.io NPM package](https://www.npmjs.com/package/socket.io)
 
-### Reminder: Submission on BCS
+## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-* **This assignment must be deployed.** * Please submit both the deployed Heroku link to your homework AND the link to the Github Repository!
+Copyright (c) 2020 Alicia Gorton
 
-- - -
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### Minimum Requirements
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed. Hosting on Heroku and adding a README.md are required for this homework. In addition, add this homework to your portfolio, more information can be found below.
-
-
-
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
