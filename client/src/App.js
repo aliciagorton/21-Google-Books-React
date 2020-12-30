@@ -1,7 +1,8 @@
 import { HashRouter as Router, Route, Switch} from "react-router-dom";
 import Navbar from './components/Navbar';
-import Saved from './components/Saved';
-import Search from './components/Search';
+import Detail from './pages/Detail';
+import Saved from './pages/Saved';
+import Search from './pages/Search';
 
 function App() {
   return (
@@ -9,10 +10,13 @@ function App() {
       <Navbar />
         <Switch>
           <Route exact path="/">
+            <Search/>  
+          </Route>
+          <Route exact path="/saved">
             <Saved />
           </Route>
-          <Route exact path="/search">
-            <Search />
+          <Route exact path="/books/:id">
+            <Detail/>
           </Route>
         </Switch>
     </Router>
