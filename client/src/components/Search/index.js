@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import API from '../utils/API';
-import { Button, Input, Grid, Typography, Card, Form, Container, Image  } from '@material-ui/core';
+import API from '../../utils/API/index';
+import { Button, Input, Grid, Typography, Card, Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
@@ -51,7 +51,7 @@ const Search = () => {
     return (
         <div>
             <Card className={classes.search}>
-                <Form>
+                <form>
                     <Input 
                         className={classes.formSearch}
                         onChange={handleChange}
@@ -61,7 +61,7 @@ const Search = () => {
                         onClick={handleSubmit}>
                         Search
                     </Button>
-                </Form>
+                </form>
             </Card>
             <div>
             {searchResult.map(res => (
@@ -69,7 +69,7 @@ const Search = () => {
                     <Container className={classes.bookContainer}>
                         <Typography className={classes.title}>{res.volumnInfo.title} 
                         </Typography>
-                        <Image 
+                        <image 
                             value={res.volumeInfo}
                             src={res.volumeInfo.imageLinks ? res.volumeInfo.imageLinks.thumbnail : ''} 
                             alt="No Image Found" 
